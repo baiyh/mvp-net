@@ -1,0 +1,25 @@
+本项目采用MVP框架
+网络请求采用retrofit2+rxjava2
+
+各目录功能：
+base:基础包，存放MVP基类，及一些基础
+
+bean：实体类
+
+contracts：契约包，存放各个页面的契约，作用是把model\view\presenter集合在一起，
+           提升代码规范，也是Google提倡的方式，此包可以不需要，看个人情况
+
+disposable:订阅管理类
+
+error:错误统一处理类
+
+model:MVP中的M,业务逻辑和数据的处理，专注处理数据
+
+presenter：MVP中的P,model和view的纽带，持有model和view
+
+retrofit:网络请求的封装放在这个包下面
+
+service：服务包，存放服务service和api接口
+
+ui:我的view层，里面存放activity、fragment等，负责ui的绘制和用户交互在此层
+
